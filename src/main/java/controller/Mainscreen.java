@@ -27,6 +27,7 @@ public class Mainscreen implements Function{
                     Function.showPassengers();
                     break;
                 case 3:
+                    Function.renameInfo();
                     break;
                 case 4:
                     break;

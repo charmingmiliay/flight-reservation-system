@@ -6,16 +6,18 @@ public class PassengerDTO {
     private int passengerNUm=1;   //탑승객 번호
     private String name;        //탑승객 이름
     private int age;            //탑승객 나이
+    private Grade grade;
     private String country;     // 탑승객의 국적
     private String passportNum; //탑승객의 여권번호
     private String arrivals;    //탑승객의 목적지
 
     public PassengerDTO(){}
 
-    public PassengerDTO(int passengerNUm, String name, int age, String country, String passportNum, String arrivals){
+    public PassengerDTO(int passengerNUm, String name, int age, Grade grade, String country, String passportNum, String arrivals){
         this.passengerNUm=passengerNUm;
         this.name=name;
         this.age=age;
+        this.grade=grade;
         this.country=country;
         this.passportNum=passportNum;
         this.arrivals=arrivals;
@@ -43,6 +45,14 @@ public class PassengerDTO {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public Grade getGrade() {
+        return grade;
+    }
+
+    public void setGrade(Grade grade) {
+        this.grade = grade;
     }
 
     public String getCountry() {
