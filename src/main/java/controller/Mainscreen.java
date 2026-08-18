@@ -30,6 +30,7 @@ public class Mainscreen implements Function{
                     Function.renameInfo();
                     break;
                 case 4:
+                    Function.removeInfo();
                     break;
                 case 9:
                     System.out.println("프로그램을 종료합니다.");

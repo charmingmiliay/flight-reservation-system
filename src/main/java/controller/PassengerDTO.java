@@ -3,7 +3,7 @@ package controller;
 import javax.print.DocFlavor;
 
 public class PassengerDTO {
-    private int passengerNUm=1;   //탑승객 번호
+    private int passengerNum=1;   //탑승객 번호
     private String name;        //탑승객 이름
     private int age;            //탑승객 나이
     private Grade grade;
@@ -13,8 +13,8 @@ public class PassengerDTO {
 
     public PassengerDTO(){}
 
-    public PassengerDTO(int passengerNUm, String name, int age, Grade grade, String country, String passportNum, String arrivals){
-        this.passengerNUm=passengerNUm;
+    public PassengerDTO(int passengerNum, String name, int age, Grade grade, String country, String passportNum, String arrivals){
+        this.passengerNum=passengerNum;
         this.name=name;
         this.age=age;
         this.grade=grade;
@@ -23,12 +23,12 @@ public class PassengerDTO {
         this.arrivals=arrivals;
     }
 
-    public int getPassengerNUm() {
-        return passengerNUm;
+    public int getPassengerNum() {
+        return passengerNum;
     }
 
-    public void setPassengerNUm(int passengerNUm) {
-        this.passengerNUm = passengerNUm;
+    public void setPassengerNum(int passengerNum) {
+        this.passengerNum = passengerNum;
     }
 
     public String getName() {
@@ -84,10 +84,13 @@ public class PassengerDTO {
 
     @Override
     public String toString() {
-        return "Passenger [passenger numger = " + passengerNUm +
+        return "Passenger [passenger numger = " + passengerNum +
                 ", name = " + name +
                 ", age = " + age +
                 ", country = " + country +
                 ", passport number = " + passportNum + "]";
+    }
+
+    public void removeIf(Object o) {
     }
 }

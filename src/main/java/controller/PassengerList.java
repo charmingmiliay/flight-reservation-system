@@ -27,7 +27,7 @@ public class PassengerList {
     }
 
     public void save(PassengerDTO passenger){
-        passenger.setPassengerNUm(passengerNum++);
+        passenger.setPassengerNum(passengerNum++);
         reservation.add(passenger);
 
     }
